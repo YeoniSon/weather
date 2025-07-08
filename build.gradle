@@ -33,4 +33,7 @@ dependencies {
 
 tasks.named('test') {
     useJUnitPlatform()
+
+    //Java HotSpot(TM) 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended 에러 해결을 위한 코드
+    jvmArgs "-Xshare:off"
 }
