@@ -37,6 +37,7 @@ public class JdbcMemoRepositoryTest {
     void findAllMemoTest() {
         List<Memo> memoList = jdbcMemoRepository.findAll();
         System.out.println(memoList);
+        //given
         assertNotNull(memoList);
     }
 }
