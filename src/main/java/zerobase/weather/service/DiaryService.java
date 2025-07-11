@@ -48,7 +48,6 @@ public class DiaryService {
     public void createDiary(LocalDate date, String text) {
        // 날씨 데이터 가져오기(API에서 가져오기? or DB에서 가져오기?)
         DateWeather dateWeather = getDateWeather(date);
-
         // 3. 파싱된 데이터 + 일기 값 db에 넣기
         Diary nowDiary = new Diary();
         nowDiary.setDateWeather(dateWeather);
